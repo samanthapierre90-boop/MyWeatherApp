@@ -3,19 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
     <title>MyWeatherApp</title>
   </head>
   <body>
     <header>
 
+        
+    </header>
+    <main>
+        <div class="app">
+      <div class="weather-info">
+        <h2>Weather Information</h2>
         </form>
           <input type="text" placeholder="Enter city..." />
           <button type="submit">Get Weather</button>
         </form>
-    </header>
-    <main>
-      <div class="weather-info">
-        <h2>Weather Information</h2>
         <p id="city">City: </p>
         <p id="temperature">Temperature: </p>
         <p id="description">Description: </p>
@@ -24,6 +27,7 @@
         <h2>Temperature Chart</h2>
         <canvas id="temperatureChart"></canvas>
       </div>
+      
     </main>
     <footer>
       <a href="https://github.com/samanthapierre90-boop" target="_blank"></a>
@@ -41,5 +45,6 @@
         Netlify</a
       >
     </footer>
+    </div>
   </body>
 </html>
