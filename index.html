@@ -3,58 +3,57 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=BBH+Bartle&family=BBH+Bogle&family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/styles.css" />
     <title>MyWeatherApp</title>
   </head>
   <body>
-     <main>
-        <div class="app">
-    <header>
-<h2>Weather Information</h2>
-        
-    </header>
-   <form class="search-form">
-  <input 
-    type="text" 
-    placeholder="Enter city..." 
-    required 
-    class="search-form-input"
-  />
+    <main>
+      <div class="app">
+        <header>
+          <h2>Weather Information</h2>
+        </header>
+        <form class="search-form">
+          <input
+            type="text"
+            placeholder="Enter city..."
+            required
+            class="search-form-input"
+          />
 
-  <button 
-    type="submit" 
-    class="search-form-button">
-    Get Weather
-  </button>
-</form>
+          <button type="submit" class="search-form-button">Get Weather</button>
+        </form>
 
+        <div class="content">
+          <div class="weather-info">
+            <div class="data-display">
+              <div class="top-weather">
+                <p id="city">City:</p>
+                <p id="temperature"></p>
+              </div>
 
-<div class="content">
+              <div class="weather-details">
+                <p id="description">Description:</p>
+                <p id="humidity">Humidity:</p>
+                <p id="wind">Wind:</p>
+              </div>
+            </div>
+          </div>
 
-  <div class="weather-info">
-    <div class="data-display">
-      <p id="city">City:</p>
-      <p id="temperature">Temperature:</p>
-      <p id="description">Description:</p>
-    </div>
-  </div>
-
-
-  <div class="temperature-chart">
-    <h2>Temperature Chart</h2>
-    <canvas id="temperatureChart"></canvas>
-  </div>
-
-</div>
-      
+          <div class="temperature-chart">
+            <h2>Temperature Chart</h2>
+            <canvas id="temperatureChart"></canvas>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <a href="https://github.com/samanthapierre90-boop" target="_blank">
-  Created by Samantha Pierre
-</a>
+        Created by Samantha Pierre
+      </a>
 
       <a
         href="https://github.com/samanthapierre90-boop?tab=repositories"
@@ -67,6 +66,7 @@
         Netlify</a
       >
     </footer>
-    </div>
+
+    <script src="src/index.js"></script>
   </body>
 </html>
