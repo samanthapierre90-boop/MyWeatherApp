@@ -1,15 +1,90 @@
 body {
   background-color: #84cdf7;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Inter", sans-serif;
 }
-
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
 .app {
   background-color: whitesmoke;
+  max-width: 900px;
+  border-radius: 10px;
+  margin: 70px auto;
+  padding: 30px;
+}
+header {
+  text-align: center;
+  width: 100%;
+}
+.top-weather {
+  display: flex;
+  align-items: baseline;
+  gap: 25px;
+}
+#city {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+#temperature,
+#description {
+  font-size: 14px;
+  margin: 5px 0;
+}
+.search-form {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 600px;
+  gap: 10px;
+  margin: 30px 0;
+}
+.search-form-input {
+  background-color: #f0f0f0;
+  font-size: 16px;
+  border: none;
   border-radius: 10px;
-  margin: 70px auto;
+  width: 300px;
+  padding: 10px;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  margin-top: 30px;
+}
+.search-form-button {
+  background-color: #84cdf7;
+  color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  padding: 6px;
+  margin-left: 6px;
+}
+.search-form-button:hover {
+  background-color: #5aa0d1;
+  cursor: pointer;
+}
+.data-display {
+  display: block;
+}
+
+.temperature-chart canvas {
+  max-width: 300px;
+  max-height: 200px;
+  margin-top: 0;
+}
+.temperature-chart {
+  width: 350px;
+  text-align: center;
+  padding: 10px;
+}
+.temperature-chart h2 {
+  margin-top: 0;
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
   padding: 20px;
 }
